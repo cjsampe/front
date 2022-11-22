@@ -4,11 +4,17 @@
   
   
   <div class="card" style="width: 18rem;">
-  <img :src="rout.map" class="card-img-top" alt="...">
+  <img alt="foto ruta" :src="rout.photo1" />
   <div class="card-body">
-    <h5 class="card-title">{{ rout.name }}</h5>
+    
+    <img src="~@/assets/img/origen.svg" width="30px" alt="km"/><h5 class="card-title">{{ rout.name }}</h5>
     <p class="card-text">{{ rout.title }}</p>
+
+    <!--
     <b-button @click="() => this.$router.push('/routes/' + rout.id)" variant="primary">Ver Ruta</b-button>
+    -->
+    <button @click="() => this.$router.push('/routes/' + rout.id)" type="button"  class="btn btn-dark">Ver Ruta</button>
+    
   </div>
 </div>
     
