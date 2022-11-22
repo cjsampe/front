@@ -39,9 +39,11 @@ export default {
 
 .hero {
     height: 200px;
-    background-image: url("~@/assets/img/vista_panoramica.jpg");
+    background-image: url("~@/assets/img/panoramica.svg");
     background-position: center;
     background-size: cover;
+  /*  background-size: contain;
+background-repeat: no-repeat;*/
     background-attachment: fixed;
 }
 
@@ -58,7 +60,7 @@ export default {
 
 .hero h1 {
 
-    font-size: 20px;
+    font-size: 40px;
     font-weight: 700;
 }
 
