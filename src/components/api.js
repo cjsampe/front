@@ -34,4 +34,19 @@ export default class API {
   
       return await result.json()
     }
+    async postCommnet(data) {
+      let result = await fetch(`${this.url}/posts`,
+        {
+          method: 'POST',
+          headers: {
+            'Content-type': 'application/json'
+          },
+          //convierte un objeto en String
+          body: JSON.stringify(data) 
+        })
+  
+      return await result.json()
+    }
+
+
   }

@@ -1,24 +1,19 @@
 <template>
  
-  
-  
-  
-  <div class="card" style="width: 18rem;">
+
+
+  <div class="card" style="width: 20rem;">
   <img alt="foto ruta" :src="rout.photo1" />
   <div class="card-body">
     
-    <img src="~@/assets/img/origen.svg" width="30px" alt="km"/><h5 class="card-title">{{ rout.name }}</h5>
+    <img src="~@/assets/img/origen.svg" width="40px" alt="km"/><h5 class="card-title">{{ rout.name }}</h5>
     <p class="card-text">{{ rout.title }}</p>
 
-    <!--
-    <b-button @click="() => this.$router.push('/routes/' + rout.id)" variant="primary">Ver Ruta</b-button>
-    -->
+    
     <button @click="() => this.$router.push('/routes/' + rout.id)" type="button"  class="btn btn-dark">Ver Ruta</button>
     
   </div>
 </div>
-    
-
 
 <!-- 
 
@@ -66,12 +61,11 @@
   // @ is an alias to /src
   // import HelloWorld from '@/components/HelloWorld.vue'
   //
-  //import { BCard, BButton, BCardText } from "bootstrap-vue";
+  
   
   export default {
     name: "RouteItem",
-    //
-   ///components: { BCard, BButton, BCardText },
+   
     props: ["rout"],
     data() {
       return {
@@ -82,104 +76,5 @@
   };
   </script>
   <style>
-  .grid-container {
-  width: 100%;
-  margin: 10px auto 0 auto;
-  display: grid;
-  justify-content: space-evenly;
-  gap: 50px;
-  grid-template-columns: repeat(auto-fit, minmax(25px, 50px));
-}
-
-.item {
-  text-align: center;
-  overflow: hidden;
-  height: auto;
-  background: #fff;
-  border-radius: 10px;
-  margin-bottom: 20px;
-  box-shadow: 0 0px 0px -14px rgba(0, 0, 0, .25);
-}
-
-.img {
-  display: block;
-  height: 180px;
-  width: 150px;
-  object-fit: cover;
-}
-
-
-.contenedor-texto {
-  width: 20%;
-  padding: 10px 0 20px 0;
-}
-
-
-.title-card {
-  font-weight: 700;
-  text-decoration: none;
-  color: rgb(12, 11, 11);
-  font-size: 400px;
-}
-
-.cta {
-  background: #ffce38;
-  display: inline-block;
-  padding: 10px 20px;
-  text-decoration: center;
-  border-radius: 10px;
-  font-size: 10px;
-}
-
-
-
-
-/*RESPONSIVE*/
-
-@media screen and (max-width:800px) {
-  .menu-navegacion {
-    /*flex-direction: column;*/
-    height: 120px;
-    justify-content: space-evenly;
-  }
-
-  .hero h1 {
-    font-size: 38px;
-  }
-
-  .contenedor-imagenes img {
-    width: 100%;
-  }
-
-
-}
-
-@media screen and (max-width: 700px) {
-  .enlaces {
-    display: none;
-  }
-
-  .tabla2 {
-    width: 45%;
-    padding: 30px;
-  }
-
-  .tabla2>h2 {
-    margin-top: 40px;
-  }
-
-  .contenedor-imagenes2 {
-    width: 85%;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .contenedor-imagenes2 .imagen2 {
-    width: 85%;
-  }
-
-  .galeria h1 {
-    font-size: 40px;
-  }
-}
+  
   </style>

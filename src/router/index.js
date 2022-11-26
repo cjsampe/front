@@ -2,6 +2,8 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import RouteDetails from '../components/RouteDetails.vue'
+import ErrorComponent from '../components/ErrorComponent.vue'
+
 
 Vue.use(VueRouter)
 
@@ -14,6 +16,11 @@ const routes = [
     path: '/routes/:id',
     name: 'RouteDetails',
     component: RouteDetails
+  },
+  {
+    path: '/*',
+    name: 'ErrorComponent',
+    component: ErrorComponent
   },
   
 ]
