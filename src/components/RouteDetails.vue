@@ -5,7 +5,7 @@
       <div class="container d-flex justify-content-center">
         <div class="col-8">
           <br><br>  
-          <img :src="route.photo2" />
+          <img :src="route.photo2"/>
           <br><br>  
 
           <h1 class="container d-flex">
@@ -43,15 +43,15 @@
       <div class="card">
       <div v-for="post in posts" :key="post.key">
         <hr />
-        <h6>Usuario:</h6>
-        <p>{{ post.user }} </p>
-        <h6>Comentario: </h6>
+        <h6>Usuario: {{ post.user }}</h6>
+        <p>Comentario: {{ post.post }}</p>
         <p>{{ post.post }}</p>
       </div>
     </div>
     </div>
 
 
+     <RouteForm></RouteForm>
 
 
     </div>
@@ -66,12 +66,12 @@
 
  // nuevo
  import API from "./api";
-
+ import RouteForm from "./RouteForm.vue";
 
   export default {
     name: "RouteDetails",
    // components: { PostList},
-  
+  components:{RouteForm},
     data() {
     return {
       //nuevo
@@ -89,7 +89,12 @@ async created() {
     this.route = await this.api.getRouteById(this.$route.params.id);
     console.log(this.$route.params.id);
 
-    this.posts = await this.api.getPostsByRoute(this.route.id);
+    // this.posts = await this.api.getPostsByRoute(this.route.id);
+    let posts = await this.api.getPostsByRoute(this.route.id);
+    this.posts = posts.filter(post=>{
+      return post.route == this.$route.params.id
+    })
+
     console.log(this.posts);
   },
 };
