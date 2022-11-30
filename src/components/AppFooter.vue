@@ -1,7 +1,8 @@
 <template>
     <footer>
-        <img src="~@/assets//img/circulo_logo_dibujo.svg" width="60px" alt="logo" class="logo_fotter">
-        <h6 class="logo_footer">Proyecto final Desarrollo de Aplicaciones Web_CJS</h6>
+        <img src="~@/assets//img/circulo_logo_dibujo.svg" width="40px" alt="logo" class="logo_fotter"/> 
+        <p> Proyecto final Desarrollo de Aplicaciones Web_CJS</p>
+        
     </footer>
 </template>
 <script>
@@ -13,7 +14,7 @@ export default {};
 footer{
     background-position: center;
     background-size: cover;
-    background-color:rgb(12, 13, 13);
+    background-color:rgb(10, 10, 10);
     
 }
 .logo_fotter{
@@ -21,5 +22,8 @@ footer{
     padding: 0;
     margin-left: 30px;
     margin-top: 30px;
+}
+p{
+    color: white;
 }
 </style>

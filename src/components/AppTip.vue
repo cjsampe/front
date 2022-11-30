@@ -3,14 +3,14 @@
   
       <body>
         <main class="grid-container">
-          <div class="item">
-            <img src="~@/assets/img/mapa_dibujo.svg" alt="map" class="img">
+          <div class="item" >
+            <img src="~@/assets/img/mapa_dibujo.svg" style="justify-content: center" alt="map" class="img">
             <div class="contenedor-texto">
               <p class="title-card">Planea tu ruta, lleva siempre mapa y avisa a donde vas.</p>
             </div>
           </div>
           <div class="item">
-            <img src="~@/assets/img/senal_dibujo.svg" alt="sign" class="img">
+            <img src="~@/assets/img/senial_dibujo.svg" alt="sign" class="img">
             <div class="contenedor-texto">
               <p class="title-card">Sigue el mapa, el track y/o la señalización existente.</p>
             </div>
