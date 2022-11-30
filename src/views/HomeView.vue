@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <div class="row">
-      <div class="col-8">
+      <div>
         <RouteList></RouteList>
       </div></div>
       <AppTipVue></AppTipVue>

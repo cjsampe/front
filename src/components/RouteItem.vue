@@ -6,8 +6,11 @@
   <img alt="foto ruta" :src="rout.photo1" />
   <div class="card-body">
     
-    <img src="~@/assets/img/origen.svg" width="40px" alt="km"/><h5 class="card-title">{{ rout.name }}</h5>
-    <p class="card-text">{{ rout.title }}</p>
+    <img src="~@/assets/img/origen.svg" width="40px" alt="km"/>
+    <h5 class="card-title">{{ rout.name }}</h5>
+    <h6 class="card-text">{{ rout.title }}</h6>
+    
+    
 
     
     <button @click="() => this.$router.push('/routes/' + rout.id)" type="button"  class="btn btn-dark">Ver Ruta</button>

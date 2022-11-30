@@ -1,8 +1,10 @@
 <template>
  <div>
-        <!--<h3 class ="text-center mt-5">Nuestras rutas</h3>-->
+  <br>
+  <h3 class ="text-center mt-5"> | nuestras rutas |</h3>
   
         <div>
+          <br><br>
           <div>
             <b-row deck class="cardgroup">
               <RouteItem
@@ -11,14 +13,14 @@
                 :rout="rout"
               ></RouteItem>
             </b-row>
+            <br>
             <b-row>
-              <b-col md="4" class="my-1">
+              <b-col md="1" class="mx-auto">
                 <b-pagination
                   @change="onPageChanged"
                   :total-rows="totalRows"
                   :per-page="perPage"
                   v-model="currentPage"
-                  class="my-0"
                 />
               </b-col>
             </b-row>
@@ -33,12 +35,12 @@
   // import HelloWorld from '@/components/HelloWorld.vue'
   
   
-  import { BRow ,BPagination,BCol} from "bootstrap-vue";
+  //import {BRow ,BPagination,BCol} from "bootstrap-vue";
   import RouteItem from "./RouteItem.vue";
   export default {
     name: "RouteList",
-   components: { RouteItem, BRow,BCol ,BPagination},
-   //components: { RouteItem},
+   //components: { RouteItem, BRow,BCol ,BPagination},
+   components: { RouteItem},
     data() {
       return {
         routes: [],
@@ -76,14 +78,14 @@
 </script>
 <style scoped>
 .card-item img {
-  width: 10%;
+  width: 80%;
 }
 .card-item {
-  max-width: 25%;
+  max-width: 50px;
 }
 .cardgroup {
-  row-gap: 30px;
-  column-gap: 10px;
+  row-gap: 50px;
+  column-gap: 80px;
   justify-content: center;
 }
 .space-between {

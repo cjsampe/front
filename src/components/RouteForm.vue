@@ -73,30 +73,21 @@ export default {
 
 <style>
 #container {
-  margin: 30px auto;
+  margin: 20px auto;
   max-width: 1000px;
-  padding: 20px;
+  padding: 10px;
 }
 
 .form-wrap {
-  background: #83b0a9;
-  padding: 50px 25px;
+  background: #5ecfad;
+  padding: 25px 25px;
   color: rgb(10, 10, 10);
-}
-
-.form-wrap h1,
-.form-wrap p {
-  text-align: center;
-  color: #e7e2df;
-}
-
-.form-wrap .form-group {
-  margin-top: 20px;
+  border-radius: 20px;
 }
 
 .form-wrap .form-group label {
   display: block;
-  color: #f7f6f4;
+  color: #e4bf76;
 }
 
 .form-wrap .form-group input {
@@ -112,14 +103,14 @@ export default {
   width: 10%;
   padding: 10px;
   margin-top: 20px;
-  background: #9c9b9a;
+  background: #0a0a0a;
   color: #faf6f5;
   cursor: pointer;
   border-radius: 4px;
 }
 
 .form-wrap button:hover {
-  background: #0d0d0d;
+  background: #cb731a;
 }
 
 .form-wrap .bottom-text {

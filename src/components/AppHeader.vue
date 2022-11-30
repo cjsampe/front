@@ -25,7 +25,7 @@ export default {
     display: flex;
     justify-content: space-between;
     height: 7rem;
-    background-color: white;
+    background-color: rgb(254, 250, 250);
     padding-left: 2rem;
     padding-right: 2rem;
 }
@@ -39,7 +39,7 @@ export default {
 
 .hero {
     height: 200px;
-    background-image: url("~@/assets/img/panoramica.svg");
+    background-image: url("~@/assets/img/pinos.svg");
     background-position: center;
     background-size: cover;
   /*  background-size: contain;
