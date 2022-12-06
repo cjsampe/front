@@ -12,7 +12,7 @@
           <br>
 
           <h1 style="max-width: 48rem; justify-content: center">
-            | {{ route.name }} |<br>
+            |{{ route.name }}|<br>
             
           </h1>
 
@@ -38,40 +38,27 @@
       <li class="list-group-item"> 
     <img src="~@/assets/img/min.svg" width="50px" alt="min"> Desnivel mínimo de {{ route.min}} metros</li>
     <li class="list-group-item">
-      <img src="~@/assets/img/estacion.svg" width="50px" alt="estacion"> Con un desnivel de {{ route.season}}</li>
+      <img src="~@/assets/img/estacion.svg" width="50px" alt="estacion"> Estación ideal {{ route.season}}</li>
+    <li class="list-group-item"> Ruta de nivel {{ route.levelys}}</li>
 
   </ul>
-</div>
-<br>
-<div class="space-between">
-    <router-link button to="/" class="btn btn-dark" >Volver</router-link>
-</div>
+  </div>
 
-<!--
-          <div><img src="~@/assets/img/km.svg" alt="km">  :{{ route.km}} Km
-              <img src="~@/assets/img/origen.svg" alt="origen">  :{{ route.village}} 
-              <img src="~@/assets/img/provincia.svg" alt="provincia">  :{{ route.province}}
-              <img src="~@/assets/img/tipo.svg" alt="tipo">  :{{ route.type}}
-              <img src="~@/assets/img/desnivel.svg" alt="desnivel">  :{{ route.unevenness }} metros
-          </div>
-          <div><img src="~@/assets/img/reloj.svg" alt="desnivel">  :{{ route.time }}
-              <img src="~@/assets/img/max.svg" alt="max">  :{{ route.max }} metros
-              <img src="~@/assets/img/min.svg" alt="min">  :{{ route.min }} metros
-              <img src="~@/assets/img/estacion.svg" alt="estacion">  :{{ route.season }} </div>
-              <br><br>    
-            <div class="space-between">
-          <router-link button to="/" class="btn btn-dark">Volver</router-link>
-          </div> -->
-          </div>  
-      </div> 
-      <br><br>   
-      <br>
-      <div class="container d-flex justify-content-center">
-      <img src="~@/assets/img/gif.gif"  class="img">
+    <br>
+    <div class="space-between">
+      <router-link button to="/" class="btn btn-dark" >Volver</router-link>
     </div>
 
-      <h4>| Comentarios de nuestros usuarios |</h4>
-      <div class="card">
+
+  </div>  
+  </div> 
+      <br><br><br>
+  <div class="container d-flex justify-content-center">
+    <img src="~@/assets/img/gif.gif"  class="img">
+  </div>
+
+  <h4>| Comentarios de nuestros usuarios |</h4>
+    <div class="card">
         <div class="card-body">
       <div v-for="post in posts" :key="post.key">
         <hr />
@@ -95,10 +82,6 @@
   <script>
 
 
-// prueba post
- // import PostList from "@/components/PostList.vue";
-
-
  // nuevo
  import API from "./api";
  import RouteForm from "./RouteForm.vue";
@@ -115,14 +98,18 @@
       //viejo
       route: null,
 
+
       //nuevo
       posts: null,
+
+      
     };
 },
 async created() {
     this.api = new API("http://localhost:2044");
     this.route = await this.api.getRouteById(this.$route.params.id);
     console.log(this.$route.params.id);
+
 
     // this.posts = await this.api.getPostsByRoute(this.route.id);
     let posts = await this.api.getPostsByRoute(this.route.id);
@@ -131,6 +118,8 @@ async created() {
     })
 
     console.log(this.posts);
+
+    
   },
 };
 </script>

@@ -6,7 +6,7 @@
         <b-form-input
           id="input-1"
           type="text"
-          placeholder="Escribe aquí tú título"
+          placeholder="Escribe aquí un título"
           v-model="formData.name"
 
           required
