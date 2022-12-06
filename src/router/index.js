@@ -2,7 +2,11 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import RouteDetails from '../components/RouteDetails.vue'
+import LevelView from '../views/LevelView.vue'
 import ErrorComponent from '../components/ErrorComponent.vue'
+// nuevo
+import FeatureView from '../views/FeatureView.vue'
+
 
 
 Vue.use(VueRouter)
@@ -17,6 +21,21 @@ const routes = [
     name: 'RouteDetails',
     component: RouteDetails
   },
+
+  //nuevo consejos
+  {
+    path: '/feature',
+    name: 'FeatureDetails',
+    component: FeatureView
+  },
+
+  //niveles
+  {
+    path: '/level',
+    name: 'LevelList',
+    component: LevelView
+  },
+
   {
     path: '/*',
     name: 'ErrorComponent',
