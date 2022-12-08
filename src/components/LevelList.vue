@@ -2,8 +2,9 @@
     <div>
      <br>
      <h3 class ="text-center mt-5"> | niveles de rutas |</h3>
-     
-                <div class="card">
+    
+     <!--
+                <div class="card"> -->
                     <div class="card-body" >
                  <LevelItem
                    v-for="level in levels"
@@ -12,7 +13,7 @@
                  ></LevelItem>
                     </div>
              </div>
-           </div>
+           
         
       
      </template>

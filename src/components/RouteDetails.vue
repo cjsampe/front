@@ -7,7 +7,7 @@
         <div class="col-6">  
 
     <div class="card" style="max-width: 48rem;">
-      <img :src="route.photo2" alt="Card image"/>
+      <img :src="route.photo2" alt="Rutas"/>
     </div>
           <br>
 
@@ -58,24 +58,24 @@
   </div>
 
   <h4>| Comentarios de nuestros usuarios |</h4>
-    <div class="card">
+    
         <div class="card-body">
       <div v-for="post in posts" :key="post.key">
         <hr />
         <h5>Usuario: {{ post.user }}</h5>
         <h6>{{ post.name }}</h6>
-        <h6>" {{ post.post }} "</h6>
-      </div>
+        <h6>" {{ post.post }} "</h6> 
     </div>
     </div>
     </div>
+    <br>
     <h4>|      ¿Has hecho esta ruta? Deja tu comentario si lo deseas      |</h4>
    
 
 
      <RouteForm></RouteForm>
 
-
+    
     </div>
   </template>
   

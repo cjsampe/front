@@ -1,8 +1,9 @@
 <template>
-    <main class="home">
-  
-      <body>
-        <main class="grid-container">
+  <div>
+    
+    <h3 class ="text-center mt-5"> | consejos antes de inciar tu ruta |</h3>
+    <br><br>
+        <div class="grid-container">
           <div class="item" >
             <img src="~@/assets/img/mapa_dibujo.svg" style="justify-content: center" alt="map" class="img">
             <div class="contenedor-texto">
@@ -28,9 +29,9 @@
             </div>
           </div>
 
-        </main>
-      </body>
-    </main>
+        </div>
+        </div>
+
   </template>
   
   <script>
@@ -44,10 +45,10 @@
   /* Grid*/
   .grid-container {
     width: 100%;
-    margin: 30px auto 0 auto;
+    margin: 30 auto 0 auto;
     display: grid;
     justify-content: space-evenly;
-    gap: 15px;
+    gap: 20px;
     grid-template-columns: repeat(auto-fit, minmax(25px, 300px));
   }
   
@@ -57,20 +58,20 @@
     height: auto;
     background: #fff;
     border-radius: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     box-shadow: 0 0px 0px -14px rgba(0, 0, 0, .25);
   }
   
   .img {
-    display: block;
-    width: 50%;
+    
+    height: 35%;
     align-content: center;
   }
   
   
   .contenedor-texto {
     width: 100%;
-    padding: 30px 0 30px 0;
+    padding: 30px 0 10px 0;
   }
   
   
@@ -78,17 +79,10 @@
     font-weight: 300;
     text-decoration: none;
     color: rgb(12, 11, 11);
-    font-size: 15px;
+    font-size: 20px;
   }
   
-  .cta {
-    background: #ffce38;
-    display: inline-block;
-    padding: 10px 20px;
-    text-decoration: center;
-    border-radius: 10px;
-    font-size: 10px;
-  }
+  
   
   
   

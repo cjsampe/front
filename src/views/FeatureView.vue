@@ -1,12 +1,12 @@
 <template>
     <div class="feature">
-      <div class="row">
+      <!--<div class="row">
         
-        <div>
+        <div> -->
 
           <br>
           <FeatureDetails></FeatureDetails>
-        </div></div>
+        
     
     </div>
     

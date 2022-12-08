@@ -1,11 +1,11 @@
 <template>
     <div class="level">
-      <div class="row">
+      <!--<div class="row">
         
-        <div>
+        <div>  -->
           <LevelList></LevelList>
 
-        </div></div>
+        
     
     </div>
     
