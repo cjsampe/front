@@ -5,7 +5,7 @@
  <div class="container d-flex justify-content-center">
     <div class="card-body">
       
-      <img src="~@/assets/img/origen.svg" width="40px" alt="km"/>
+      <img src="~@/assets/img/niveles-mov.gif" width="40px" alt="nivel"/>
       <h5 class="card-title">{{ level.name }}</h5>
       <h6 class="card-text">{{ level.characteristics }}</h6>
       

@@ -1,9 +1,16 @@
 <template>
-    <footer>
-        <img src="~@/assets//img/circulo_logo_dibujo.svg" width="40px" alt="logo" class="logo_fotter"/> 
-        <p> Proyecto final Desarrollo de Aplicaciones Web_CJS</p>
+ 
+    <footer> 
+        <div class="text-align-center"> 
+            <br>
+            <p><img src="~@/assets/img/muneca.png" width="40px" alt="Caminicos" class="logo"/>  María Carmen Jiménez Sampériz</p>
+            <p style="font-weight: bold;"> © Proyecto final Desarrollo de Aplicaciones Web_CJS</p>
+            <p style="font-style: italic; color:aqua;">"La infomación aquí recogida no tiene ninguna veracidad. Pertenece a un proyecto  cuya información es ficticia."</p>
+        </div>
         
     </footer>
+
+  
 </template>
 <script>
 export default {};
@@ -15,15 +22,20 @@ footer{
     background-position: center;
     background-size: cover;
     background-color:rgb(10, 10, 10);
+    padding-bottom: 1rem;
     
 }
-.logo_fotter{
-    
-    padding: 0;
-    margin-left: 30px;
-    margin-top: 30px;
+
+.text-align-center {
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  
 }
+
 p{
     color: white;
+   
+    
 }
 </style>

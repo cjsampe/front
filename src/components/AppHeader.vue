@@ -25,7 +25,7 @@ export default {
     display: flex;
     justify-content: space-between;
     height: 7rem;
-    background-color: rgb(254, 250, 250);
+    background-color: white;
     padding-left: 2rem;
     padding-right: 2rem;
 }
@@ -42,8 +42,6 @@ export default {
     background-image: url("~@/assets/img/pinos.svg");
     background-position: center;
     background-size: cover;
-  /*  background-size: contain;
-background-repeat: no-repeat;*/
     background-attachment: fixed;
 }
 

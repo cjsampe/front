@@ -1,32 +1,28 @@
 <template>
  <div>
-  <br>
-  <h3 class ="text-center mt-5"> | nuestras rutas |</h3>
-  
-        <div>
-          <br><br>
-          <div>
-            <b-row deck class="cardgroup">
+    <br>
+    <h3 class ="text-center mt-5"> | nuestras rutas |</h3>
+    <br><br>
+    <b-row deck class="cardgroup">
               <RouteItem
                 v-for="rout in paginatedItems"
                 :key="rout.id"
                 :rout="rout"
               ></RouteItem>
-            </b-row>
-            <br>
-            <b-row>
-              <b-col md="1" class="mx-auto">
+    </b-row>
+      <br>
+    <b-row>
+      <b-col md="1" class="mx-auto">
                 <b-pagination
                   @change="onPageChanged"
                   :total-rows="totalRows"
                   :per-page="perPage"
                   v-model="currentPage"
                 />
-              </b-col>
-            </b-row>
-          </div>
-        </div>
-      </div>
+      </b-col>
+    </b-row>
+  </div>
+        
    
   </template>
   
