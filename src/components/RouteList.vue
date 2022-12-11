@@ -47,7 +47,8 @@
       };
     },
     async mounted() {
-      let response = await fetch("http://localhost:2044/routes").then((data) =>
+      let response = await fetch("https://caminicosapi.azurewebsites.net/routes").then((data) =>
+      //let response = await fetch("http://localhost:2044/routes").then((data) =>
         data.json()
       );
       this.routes = response;

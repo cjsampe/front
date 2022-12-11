@@ -61,7 +61,8 @@ export default {
         console.log({...this.formData});
 
         this.formData.route = this.$route.params.id
-        let api = new API("http://localhost:2044");
+        //let api = new API("http://localhost:2044");
+        let api = new API("https://caminicosapi.azurewebsites.net");
 
         let result = await api.postCommnet(this.formData)
         console.log({...result});

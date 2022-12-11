@@ -107,7 +107,8 @@
     };
 },
 async created() {
-    this.api = new API("http://localhost:2044");
+    this.api = new API("https://caminicosapi.azurewebsites.net");
+   // this.api = new API("http://localhost:2044");
     this.route = await this.api.getRouteById(this.$route.params.id);
     console.log(this.$route.params.id);
 
