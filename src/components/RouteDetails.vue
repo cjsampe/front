@@ -16,7 +16,7 @@
             
           </h1>
 
-      <div>Descripción:{{ route.description}}</div>
+      <div>{{ route.description}}</div>
           <br>      
 
           <div class="card" style="max-width: 48rem;">
@@ -39,7 +39,8 @@
     <img src="~@/assets/img/min.svg" width="50px" alt="min"> Desnivel mínimo de {{ route.min}} metros</li>
     <li class="list-group-item">
       <img src="~@/assets/img/estacion.svg" width="50px" alt="estacion"> Estación ideal {{ route.season}}</li>
-    <li class="list-group-item"> Ruta de nivel {{ route.levelys}}</li>
+    <li class="list-group-item">
+      <img src="~@/assets/img/nivel.svg" width="50px" alt="nivel"> Ruta de nivel {{ route.levelys}}</li>
 
   </ul>
   </div>

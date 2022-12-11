@@ -32,6 +32,3 @@ new Vue({
 }).$mount('#app')
 
 
-//nuevo
-// Make BootstrapVue available throughout your project
-//Vue.use(BootstrapVue)

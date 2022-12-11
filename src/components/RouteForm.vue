@@ -30,6 +30,7 @@
           placeholder="Escribe tu experiencia..."
           rows="3"
           max-rows="6"
+          required
         ></b-form-textarea>
       </b-form-group>
 
