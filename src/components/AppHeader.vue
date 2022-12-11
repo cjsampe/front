@@ -39,7 +39,7 @@ export default {
 
 .hero {
     height: 200px;
-    background-image: url("~@/assets/img/vista_panoramica.jpg");
+    background-image: url("~@/assets/img/pinos.svg");
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -58,7 +58,7 @@ export default {
 
 .hero h1 {
 
-    font-size: 20px;
+    font-size: 40px;
     font-weight: 700;
 }
 
@@ -70,7 +70,7 @@ export default {
 
 
 /*RESPONSIVE*/
-/*
+
 @media screen and (max-width:800px) {
     .menu-navegacion {
         height: 120px;
@@ -88,13 +88,6 @@ export default {
 
 }
 
-@media screen and (max-width: 700px) {
-    .enlaces {
-        display: none;
-    }
-
-}
-*/
 
 </style>
 

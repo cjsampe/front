@@ -1,8 +1,16 @@
 <template>
-    <footer>
-        <img src="~@/assets//img/circulo_logo_dibujo.svg" alt="logo" class="logo_fotter">
-        <h4 class="logo_footer">Proyecto final Desarrollo de Aplicaciones Web_CJS</h4>
+ 
+    <footer> 
+        <div class="text-align-center"> 
+            <br>
+            <p><img src="~@/assets/img/muneca.png" width="40px" alt="Caminicos" class="logo"/>  Carmen Jiménez Sampériz</p>
+            <p style="font-weight: bold;"> © Proyecto Final CFGS Desarrollo de Aplicaciones Web</p>
+            <p style="font-style: italic; color:aqua;">"La información aquí recogida no tiene ninguna veracidad. Pertenece a un proyecto final de CFGS cuya información es ficticia."</p>
+        </div>
+        
     </footer>
+
+  
 </template>
 <script>
 export default {};
@@ -13,12 +21,21 @@ export default {};
 footer{
     background-position: center;
     background-size: cover;
-    background-color:rgb(53, 115, 117);
+    background-color:rgb(10, 10, 10);
+    padding-bottom: 1rem;
+    
 }
-.logo_fotter{
-    width: 7%;
-    padding: 0;
-    margin-left: 30px;
-    margin-top: 30px;
+
+.text-align-center {
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  
+}
+
+p{
+    color: white;
+   
+    
 }
 </style>
