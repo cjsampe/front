@@ -3,9 +3,9 @@
     <footer> 
         <div class="text-align-center"> 
             <br>
-            <p><img src="~@/assets/img/muneca.png" width="40px" alt="Caminicos" class="logo"/>  María Carmen Jiménez Sampériz</p>
-            <p style="font-weight: bold;"> © Proyecto final Desarrollo de Aplicaciones Web_CJS</p>
-            <p style="font-style: italic; color:aqua;">"La infomación aquí recogida no tiene ninguna veracidad. Pertenece a un proyecto  cuya información es ficticia."</p>
+            <p><img src="~@/assets/img/muneca.png" width="40px" alt="Caminicos" class="logo"/>  Carmen Jiménez Sampériz</p>
+            <p style="font-weight: bold;"> © Proyecto Final CFGS Desarrollo de Aplicaciones Web</p>
+            <p style="font-style: italic; color:aqua;">"La información aquí recogida no tiene ninguna veracidad. Pertenece a un proyecto final de CFGS cuya información es ficticia."</p>
         </div>
         
     </footer>

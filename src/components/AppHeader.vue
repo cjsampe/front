@@ -70,7 +70,7 @@ export default {
 
 
 /*RESPONSIVE*/
-/*
+
 @media screen and (max-width:800px) {
     .menu-navegacion {
         height: 120px;
@@ -88,13 +88,6 @@ export default {
 
 }
 
-@media screen and (max-width: 700px) {
-    .enlaces {
-        display: none;
-    }
-
-}
-*/
 
 </style>
 

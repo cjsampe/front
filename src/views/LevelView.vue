@@ -1,8 +1,6 @@
 <template>
     <div class="level">
-      <!--<div class="row">
-        
-        <div>  -->
+      
           <LevelList></LevelList>
 
         

@@ -1,36 +1,32 @@
 <template>
-  <div>
+  <main>
     
-    <h3 class ="text-center mt-5"> | consejos antes de inciar tu ruta |</h3>
+    <h3 class ="text-center mt-5"> | consejos antes de iniciar tu ruta |</h3>
     <br><br>
         <div class="grid-container">
           <div class="item" >
             <img src="~@/assets/img/mapa_dibujo.svg" style="justify-content: center" alt="map" class="img">
-            <div class="contenedor-texto">
+            
               <p class="title-card">Planea tu ruta, lleva siempre mapa y avisa a donde vas.</p>
-            </div>
+            
           </div>
           <div class="item">
             <img src="~@/assets/img/senial_dibujo.svg" alt="sign" class="img">
-            <div class="contenedor-texto">
+            
               <p class="title-card">Sigue el mapa, el track y/o la señalización existente.</p>
-            </div>
+            
           </div>
           <div class="item">
             <img src="~@/assets/img/mariposa_dibujo.svg" alt="nature" class="img">
-            <div class="contenedor-texto">
               <p class="title-card">Respeta la naturaleza. Mantén el entorno limpio.</p>
-            </div>
           </div>
           <div class="item">
             <img src="~@/assets/img/botas_dibujo.svg" alt="boots" class="img">
-            <div class="contenedor-texto">
               <p class="title-card">Utiliza calzado adecuado y lleva el equipo necesario.</p>
-            </div>
           </div>
 
         </div>
-        </div>
+  </main>
 
   </template>
   
@@ -45,7 +41,7 @@
   /* Grid*/
   .grid-container {
     width: 100%;
-    margin: 30 auto 0 auto;
+    margin: 0 auto 0 auto;
     display: grid;
     justify-content: space-evenly;
     gap: 20px;
