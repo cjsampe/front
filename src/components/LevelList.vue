@@ -31,7 +31,8 @@
          };
        },
        async mounted() {
-         let response = await fetch("http://localhost:2044/levels").then((data) =>
+         let response = await fetch("https://caminicosapi.azurewebsites.net/levels").then((data) =>
+        // let response = await fetch("http://localhost:2044/levels").then((data) =>
            data.json()
          );
          this.levels = response;
